@@ -1,0 +1,72 @@
+import bcrypt from 'bcryptjs';
+const data = {
+    users: [
+        {
+          name: 'girish',
+          email: 'admin@example.com',
+          password: bcrypt.hashSync('123456'),
+          isAdmin: true,
+        },
+        {
+          name: 'vignesh',
+          email: 'user@example.com',
+          password: bcrypt.hashSync('123456'),
+          isAdmin: false,
+        },
+      ],
+    products: [
+        {
+            //  _id: '1',
+            name: 'Nike slim shirt',
+            slug: 'nike-slim-shirt',
+            category: 'Shirts',
+            image: 'images/p1.jpg', //679px * 829px
+            price: 120,
+            countInStock:10,
+            brand: 'Nike',
+            rating: 4.5,
+            numReview: 10,
+            description: 'high quality shirt',
+        },
+        {
+            // _id: '2',
+            name: 'Adidas slim shirt',
+            slug: 'adidas-slim-shirt',
+            category: 'Shirts',
+            image: 'images/p2.jpg',
+            price: 250,
+            countInStock:0,
+            brand: 'Adidas',
+            rating: 4.0,
+            numReview: 10,
+            description: 'high quality shirt',
+        },
+        {
+            // _id: '3',
+            name: 'Nike slim pant',
+            slug: 'nike-slim-pant',
+            category: 'Pants',
+            image: 'images/p3.jpg',
+            price: 300,
+            countInStock:25,
+            brand: 'Nike',
+            rating: 4.5,
+            numReview: 20,
+            description: 'high quality pant',
+        },
+        {
+            // _id: '4',
+            name: 'Adidas slim pant',
+            slug: 'adidas-slim-pant',
+            category: 'Pants',
+            image: 'images/p4.jpg',
+            price: 280,
+            countInStock:22,
+            brand: 'Adidas',
+            rating: 4.5,
+            numReview: 10,
+            description: 'high quality pant',
+        },
+    ],
+};
+export default data;
